@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "allowJs": true,                     // Allows you to keep older .js files unchanged
+    "checkJs": false,                    // Set to true later if you want TS to type-check raw .js files
+    "outDir": "./dist",                  // Destination for compiled JavaScript production code
+    "rootDir": "./src",                  // Source files location
+    "strict": true,                      // Activates robust type-checking rules
+    "esModuleInterop": true,             // Enables smooth interoperability with CommonJS modules
+    "skipLibCheck": true,                // Speeds up compilation by skipping third-party type checks
+    "resolveJsonModule": true,           // Allows importing .json configuration files
+    "erasableSyntaxOnly": true           // Optional: Flags syntax incompatible with native Node.js type-stripping
+  },
+  "include": ["src/**/*"],               // Compiles everything inside the src folder
+  "exclude": ["node_modules", "dist"]    // Prevents compilation of dependencies and build bundles
+}
