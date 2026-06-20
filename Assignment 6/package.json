@@ -1,19 +1,19 @@
 {
   "name": "assignment-6",
   "version": "1.0.0",
-  "main": "index.js",
- "scripts": {
-  "dev": "ts-node server.ts",
-  "build": "tsc",
-  "start": "node dist/server.js"
-}
-,
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon --exec ts-node project/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "@types/node": "^25.9.3",
+    "@types/node": "^26.0.0",
+    "nodemon": "^3.1.14",
     "ts-node": "^10.9.2",
     "typescript": "^6.0.3"
   }
